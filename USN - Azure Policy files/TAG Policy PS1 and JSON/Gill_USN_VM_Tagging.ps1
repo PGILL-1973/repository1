@@ -29,8 +29,8 @@ $defParams = @{
     DisplayName = "Append Command Tag to Virtual Machines"
     Description = "Add tag to a VM"
     Metadata = '{"category":"Tags"}'
-    Parameter = "/Users/peter/Downloads/AZ-500 Exercise files/Configure-Security-Policies-main/m1/append_tag_parameters.json" # you may need to add the full path to the file. Testing showed I needed it. 
-    Policy = "/Users/peter/Downloads/AZ-500 Exercise files/Configure-Security-Policies-main/m1/append_VM_tag.json" # you may need to add the path to the file. Testing showed I needed it. 
+    Parameter = "append_tag_parameters.json" # you may need to add the full path to the file. Testing showed I needed it. 
+    Policy = "append_VM_tag.json" # you may need to add the path to the file. Testing showed I needed it. 
     
 }
 
@@ -45,8 +45,8 @@ $defParams = @{
     DisplayName = "Append Security Owner Tag to Virtual Machines"
     Description = "Add security owner tag to a VM"
     Metadata = '{"category":"Tags"}'
-    Parameter = "/Users/peter/Downloads/AZ-500 Exercise files/Configure-Security-Policies-main/m1/append_tag_parameters.json" # you may need to add the full path to the file. Testing showed I needed it. 
-    Policy = "/Users/peter/Downloads/AZ-500 Exercise files/Configure-Security-Policies-main/m1/append_VM_tag.json" # you may need to add the path to the file. Testing showed I needed it. 
+    Parameter = "append_tag_parameters.json" # you may need to add the full path to the file. Testing showed I needed it. 
+    Policy = "append_VM_tag.json" # you may need to add the path to the file. Testing showed I needed it. 
 }
 #this variable will hold policy #1 def parameters
 $definition2 = New-AzPolicyDefinition @defParams 
