@@ -116,8 +116,9 @@ New-AzPolicyAssignment @assignParams
 #NOTE - WHEN YOU RUN CMDLET BELOW - CURSOR WILL NOT BE AVAILABLE AGAIN UNTIL THE SCAN COMPLETES. GO TO PORTAL AND LOOK AROUND, GRAB A COFFEE...JUST WAIT IT OUT..15 MIN is more than enough time...
 Start-AzPolicyComplianceScan
 
-#after scan completes - any VMs before this script was run will show non-compliant. Check portal for policy compliance. You will see "Not Started" until the scan completes
-#We need to discuss if we want to add a remediation option.  That requires a managed identity (preferably system type) account....
+#after scan completes - Check portal for policy compliance. You will see "Not Started" until the scan completes
 #test the initiative by creating a new VM and after it completes building, look at the tag names and values to confirm. 
+#any VMs before this script was run will show non-compliant.  We need to discuss if we want to add a remediation option.  That requires a managed identity (preferably system type) account....
+
 
 #End
