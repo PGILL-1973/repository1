@@ -2,6 +2,8 @@ Connect-AzAccount -environment azureusgovernment
 
 Enable-AzureRmAlias
 
+#Pull down the install-vminsights.ps1 file from this repo or run the cmdlet below to install. 
+
 #https://www.powershellgallery.com/packages/Install-VMInsights/1.9
 Install-Script -Name Install-VMInsights
 
