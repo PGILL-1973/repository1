@@ -2,8 +2,13 @@ Connect-AzAccount -environment azureusgovernment
 
 Enable-AzureRmAlias
 
-#https://www.powershellgallery.com/packages/Install-VMInsights/1.9
+#Grab the Install-VmInsights from the PSH Gallery
+
+#I do add a copy of it in the repository to pull down if preferred.
+
+#or, install below. link also provided: https://www.powershellgallery.com/packages/Install-VMInsights/1.9
 Install-Script -Name Install-VMInsights
+
 
 #statically defined right now, but will want to provide some automation. Change these to your given environment
 $WkspID = 9604b058-f89b-4650-b0f1-154a114ce67d 
